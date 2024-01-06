@@ -1,0 +1,64 @@
+{
+  "cSpell.words": [
+    "Barishal",
+    "cloudinary",
+    "fontsource",
+    "Mahmud",
+    "MERN",
+    "Rijvi",
+    "ticketbody",
+    "ticketid"
+  ],
+  // START: Settings for Eslint and Prettier
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "eslint.alwaysShowStatus": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+
+  // START: Settings for Prettier
+  "prettier.useTabs": true,
+  "prettier.jsxSingleQuote": false,
+  "prettier.tabWidth": 4,
+  "prettier.arrowParens": "avoid",
+  "prettier.singleQuote": true,
+  "workbench.colorTheme": "Learn with Sumit - Peace of the eye - Dracula version",
+  "editor.fontFamily": "'Fira Code iScript', Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "workbench.colorCustomizations": {},
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": ["variable.parameter"],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+  "editor.wordWrap": "on",
+  "terminal.integrated.env.linux": {},
+  "workbench.iconTheme": "vscode-icons",
+  "editor.indentSize": "tabSize",
+  "editor.tabSize": 4,
+  "editor.linkedEditing": true
+}

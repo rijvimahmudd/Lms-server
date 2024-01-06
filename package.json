@@ -4,8 +4,11 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "ts-node-dev --respawn --transpile-only ./server.ts"
+  "build": "rimraf dist && tsc",
+  "ts.check": "tsc --project tsconfig.json",
+  "add-build": "git add dist",
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "dev": "ts-node-dev --respawn --transpile-only ./server.ts"
   },
   "author": "",
   "license": "ISC",
@@ -23,7 +26,9 @@
     "@typescript-eslint/parser": "^6.7.5",
     "eslint": "^8.51.0",
     "eslint-config-prettier": "^9.0.0",
-    "prettier": "^3.0.3"
+    "pre-commit": "^1.2.2",
+    "prettier": "^3.0.3",
+    "rimraf": "^5.0.5"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -39,5 +44,10 @@
     "node-cron": "^3.0.3",
     "nodemailer": "^6.9.6",
     "ts-node-dev": "^2.0.0"
-  }
+  },
+  "pre-commit": [
+      "ts.check",
+      "build",
+      "add-build"
+  ]
 }
